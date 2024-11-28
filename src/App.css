@@ -81,12 +81,26 @@ a {
   color: var(--color-febd69);
 }
 
-
-
-
-
-
-
-
-
 /* header part end */
+
+/* footer part start */
+
+footer{
+  background-color: var(--color-232f3e);
+}
+
+footer:not(:first-child){
+  border-top: 1px solid rgba(255, 255 , 255, 0.1);
+}
+footer .input-group-text{
+  background-color: var(--color-232f3e);
+  color: white;
+  padding: 8px 7px;
+}
+
+footer .col-7{
+  max-width: 47%;
+}
+
+
+/* footer part end */
