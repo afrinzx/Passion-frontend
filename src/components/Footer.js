@@ -38,7 +38,7 @@ const Footer = () => {
               <h4 className="text-white mb-4">Contact Us</h4>
               <div className="footer-links d-flex flex-column">
                 <address className="text-white fs-6">
-                  house:25/B, KFC~Khilgaon,
+                  House: 25/B, KFC~Khilgaon,
                   <br />
                   M.W.Heights,Malibagh
                   <br />

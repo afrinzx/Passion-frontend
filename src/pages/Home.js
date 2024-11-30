@@ -69,7 +69,7 @@ const Home = () => {
                 <div className="small-banner-content position-absolute">
                   <h4>FREE ENGRAVING</h4>
                   <h5>AirPods Max</h5>
-                  <p>High-fidelity playback &<br/> ultra-low distortion</p>
+                  <p>High-fidelity playback &<br/> ultra-low distortion.</p>
                 </div>
               </div>
               </div>
@@ -77,7 +77,50 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="home-wrapper-2 py-5">
+        <div className="container-xxl">
+            <div className="row">
+              <div className="col-12">
+                <div className="services d-flex align-items-center justify-content-between">
+                  <div className="d-flex align-items-center gap-10">
+                    <img src="images/service.png" alt="services"/>
+                    <div>
+                      <h5 >Free shipping</h5>
+                      <p className="mb-0">From all orders over $500</p>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center gap-10">
+                    <img src="images/service-02.png" alt="services"/>
+                    <div>
+                      <h5 >Daily Surprise Offers</h5>
+                      <p className="mb-0">Save up tp 25% off</p>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center gap-10">
+                    <img src="images/service-03.png" alt="services"/>
+                    <div>
+                      <h5 >Support 24/7</h5>
+                      <p className="mb-0">Shop with an expert</p>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center gap-10">
+                    <img src="images/service-04.png" alt="services"/>
+                    <div>
+                      <h5 >Affordable Prices</h5>
+                      <p className="mb-0">Get Factory direct price</p>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center gap-10">
+                    <img src="images/service-05.png" alt="services"/>
+                    <div>
+                      <h5 >Secure Payments</h5>
+                      <p className="mb-0">100% Protected Payments</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
       </section>
     </>
         /*1:47:45*/
