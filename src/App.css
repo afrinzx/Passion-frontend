@@ -310,3 +310,47 @@ footer .col-7{
   right: 15px;
 }
 /* Product card ends*/
+
+/* Special card */
+.special-product-card{
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: white;
+
+}
+
+.special-product-card .red-p{
+  color: var(--color-bf4800);
+}
+/* Special card end*/
+/* famous card */
+.famous-card .famous-content{
+  top:10%;
+  left:5%;
+}
+.famous-card img{
+  border-radius: 10px;
+  height: 350px;
+  width: 500px;
+
+}
+.famous-content h5{
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400px;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+.famous-content h6{
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 500px;
+  margin-bottom: 7px;
+}
+.famous-content p{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 100px;
+  margin-bottom: 7px;
+}
+/* famous card ends */
