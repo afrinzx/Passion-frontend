@@ -1,4 +1,6 @@
 import React from "react";
+import BreadCrumb from "../components/BreadCrumb";
+import Meta from "../components/Meta";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import BlogCard from "../components/BlogCard";
@@ -8,6 +10,8 @@ import SpecialProduct from "../components/SpecialProduct";
 const Home = () => {
   return (
     <>
+      <Meta title={"Home"} />
+      <BreadCrumb title="Home" />
       <section className="home-wrapper-1 py-5">
         <div className="container-xxl">
           <div className="row">
@@ -222,17 +226,27 @@ const Home = () => {
           <div className="row">
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img src="images/famous-3.jpg" className="img-fluid" alt="watch" />
+                <img
+                  src="images/famous-3.jpg"
+                  className="img-fluid"
+                  alt="watch"
+                />
                 <div className="famous-content position-absolute">
                   <h5 className="text-white">Big Screen</h5>
                   <h6 className="text-white">Smart Watch Series 7</h6>
-                  <p className="text-white">From $399 or $16.62/mo. for 24 mo.*</p>
+                  <p className="text-white">
+                    From $399 or $16.62/mo. for 24 mo.*
+                  </p>
                 </div>
               </div>
             </div>
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img src="images/famous-2.jpg" className="img-fluid" alt="watch" />
+                <img
+                  src="images/famous-2.jpg"
+                  className="img-fluid"
+                  alt="watch"
+                />
                 <div className="famous-content position-absolute">
                   <h5>Studio Display</h5>
                   <h6>600 nits of brightness.</h6>
@@ -242,17 +256,27 @@ const Home = () => {
             </div>
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img src="images/famous-1.jpg" className="img-fluid" alt="watch" />
+                <img
+                  src="images/famous-1.jpg"
+                  className="img-fluid"
+                  alt="watch"
+                />
                 <div className="famous-content position-absolute">
                   <h5>SMARTPHONES</h5>
                   <h6>Smartphone 13 Pro.</h6>
-                  <p>Now in Green From $999.00 or $41.62/mo. for 24 mo. Footnote*</p>
+                  <p>
+                    Now in Green From $999.00 or $41.62/mo. for 24 mo. Footnote*
+                  </p>
                 </div>
               </div>
             </div>
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img src="images/famous-4.jpg" className="img-fluid" alt="watch" />
+                <img
+                  src="images/famous-4.jpg"
+                  className="img-fluid"
+                  alt="watch"
+                />
                 <div className="famous-content position-absolute">
                   <h5>HOME SPEAKER</h5>
                   <h6>Room-filling sound.</h6>
@@ -337,15 +361,22 @@ const Home = () => {
             <div className="col-12">
               <h3 className="section-heading">Our latest Blogs</h3>
             </div>
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
+            <div className="col-3">
+              <BlogCard />
+            </div>
+            <div className="col-3">
+              <BlogCard />
+            </div>
+            <div className="col-3">
+              <BlogCard />
+            </div>
+            <div className="col-3">
+              <BlogCard />
+            </div>
           </div>
         </div>
       </section>
     </>
-    /*3:00:38*/
   );
 };
 
