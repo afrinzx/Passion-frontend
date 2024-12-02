@@ -1,49 +1,125 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-const ProductCard = () => {
+const ProductCard = (props) => {
+  const { grid } = props;
+  let location = useLocation();
   return (
-    <div className="col-3">
-      <Link className="product-card position-relative">
-        <div className="wishlist-icon position-absolute">
+    <>
+      <div
+        className={`${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}
+      >
+        <Link className="product-card position-relative">
+          <div className="wishlist-icon position-absolute">
             <Link>
-                <img src="images/wish.svg" alt="wishlist"/>
+              <img src="images/wish.svg" alt="wishlist" />
             </Link>
-        </div>
-        <div className="product-image">
-          <img src="images/watch1.jpg" className="img-fluid" alt="product image" />
-          <img src="images/watch2.jpg" className="img-fluid" alt="product image" />
-        </div>
-        <div className="product-details">
-          <h6 className="brand">Havels</h6>
-          <h4 className="product-tile">
-            Kids watch bulk 10 pack multi colored for students
-          </h4>
-          <ReactStars
-            count={5}
-            size={24}
-            value={3}
-            edit={false}
-            activeColor="#ffd700"
-          />
-          <p className="price">$100.00</p>
-        </div>
-        <div className="action-bar position-absolute">
+          </div>
+          <div className="product-image">
+            <img
+              src="images/watch1.jpg"
+              className="img-fluid"
+              alt="product image"
+            />
+            <img
+              src="images/watch2.jpg"
+              className="img-fluid"
+              alt="product image"
+            />
+          </div>
+          <div className="product-details">
+            <h6 className="brand">Havels</h6>
+            <h4 className="product-tile">
+              Kids watch bulk 10 pack multi colored for students
+            </h4>
+            <ReactStars
+              count={5}
+              size={24}
+              value={3}
+              edit={false}
+              activeColor="#ffd700"
+            />
+            <p className={`"description" ${grid===12 ?"d-block":"d-none"}`}>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
+              delectus totam vel magnam harum recusandae dicta, velit quidem
+              architecto fugit maxime, beatae molestiae fugiat ut! Id ducimus
+              dolores omnis excepturi.
+            </p>
+            <p className="price">$100.00</p>
+          </div>
+          <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
-                <Link>
-                    <img src="images/prodcompare.svg" alt="compare"/>
-                </Link>
-                <Link>
-                    <img src="images/view.svg" alt="view"/>
-                </Link>
-                <Link>
-                    <img src="images/add-cart.svg" alt="addcard"/>
-                </Link>
+              <Link>
+                <img src="images/prodcompare.svg" alt="compare" />
+              </Link>
+              <Link>
+                <img src="images/view.svg" alt="view" />
+              </Link>
+              <Link>
+                <img src="images/add-cart.svg" alt="addcard" />
+              </Link>
             </div>
-        </div>
-      </Link>
-    </div>
+          </div>
+        </Link>
+      </div>
+      <div
+        className={`${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}
+      >
+        <Link className="product-card position-relative">
+          <div className="wishlist-icon position-absolute">
+            <Link>
+              <img src="images/wish.svg" alt="wishlist" />
+            </Link>
+          </div>
+          <div className="product-image">
+            <img
+              src="images/watch1.jpg"
+              className="img-fluid"
+              alt="product image"
+            />
+            <img
+              src="images/watch2.jpg"
+              className="img-fluid"
+              alt="product image"
+            />
+          </div>
+          <div className="product-details">
+            <h6 className="brand">Havels</h6>
+            <h4 className="product-tile">
+              Kids watch bulk 10 pack multi colored for students
+            </h4>
+            <ReactStars
+              count={5}
+              size={24}
+              value={3}
+              edit={false}
+              activeColor="#ffd700"
+            />
+             <p className={`"description" ${grid===12 ?"d-block":"d-none"}`}>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
+              delectus totam vel magnam harum recusandae dicta, velit quidem
+              architecto fugit maxime, beatae molestiae fugiat ut! Id ducimus
+              dolores omnis excepturi.
+            </p>
+            <p className="price">$100.00</p>
+          </div>
+          <div className="action-bar position-absolute">
+            <div className="d-flex flex-column gap-15">
+              <Link>
+                <img src="images/prodcompare.svg" alt="compare" />
+              </Link>
+              <Link>
+                <img src="images/view.svg" alt="view" />
+              </Link>
+              <Link>
+                <img src="images/add-cart.svg" alt="addcard" />
+              </Link>
+            </div>
+          </div>
+        </Link>
+      </div>
+    </>
   );
 };
 
