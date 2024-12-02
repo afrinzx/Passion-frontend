@@ -38,11 +38,11 @@ const Footer = () => {
               <h4 className="text-white mb-4">Contact Us</h4>
               <div className="footer-links d-flex flex-column">
                 <address className="text-white fs-6">
-                  House: 25/B, KFC~Khilgaon,
+                  Islamic University of Technology
                   <br />
-                  M.W.Heights,Malibagh
+                  Board Bazar, Gazipur, Dhaka
                   <br />
-                  Post Code:1207
+                  Post Code: 1704
                 </address>
                 <a
                   href="tel:+88 01992099240"

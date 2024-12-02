@@ -219,13 +219,8 @@ footer .col-7{
 .categories>div:nth-child(7){
   border-right: 1px solid var(--color-ededed) ;
 }
-
 /*Categogies section ends*/
 /*Home Page Ends*/
-
-
-
-
 
 /* Blog part */
 .blog-card{
@@ -258,7 +253,6 @@ footer .col-7{
   line-height: 22px;
   color: var(--color-777777);
 }
-
 /* Blog part ends */
 
 /* Product card */
@@ -321,13 +315,12 @@ footer .col-7{
   padding: 20px 10px;
   border-radius: 10px;
   background-color: white;
-
 }
-
 .special-product-card .red-p{
   color: var(--color-bf4800);
 }
 /* Special card end*/
+
 /* famous card */
 .famous-card .famous-content{
   top:10%;
@@ -337,7 +330,6 @@ footer .col-7{
   border-radius: 10px;
   height: 350px;
   width: 500px;
-
 }
 .famous-content h5{
   font-size: 13px;
@@ -385,7 +377,6 @@ footer .col-7{
   box-shadow: none;
   border-color: rgba(0,0,0,0.25);
 }
-
 .filter-card .form-check-input:checked{
   border-color: var(--color-febd69);
   background-color: var(--color-febd69);
@@ -459,6 +450,7 @@ footer .col-7{
   top: 17%;
 }
 /* Our store ends*/
+
 /* Contact page*/
 .contact-inner-wrapper{
   padding: 30px 20px;
@@ -491,3 +483,38 @@ footer .col-7{
   color: var(--color-777777);
 }
 /* Contact page ends */
+
+/* Compare page */
+.compare-product-card{
+  padding: 20px 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+.compare-product-card .cross,
+.wishlist-card .cross{
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  padding: 3px;
+  cursor: pointer;
+}
+.compare-product-details h5.title{
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: bold;
+  color: var(--color-1c1c1b);
+}
+.compare-product-details h6.price{
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.compare-product-card .product-detail{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Compare page ends*/

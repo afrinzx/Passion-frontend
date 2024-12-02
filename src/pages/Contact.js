@@ -70,8 +70,7 @@ const Contact = () => {
                       <li className="mb-3 d-flex gap-15 align-items-center">
                         <AiOutlineHome className="fs-5" />
                         <address className="mb-0">
-                          House: 25/B, KFC~Khilgaon, M.W.Heights, Malibagh,
-                          Dhaka
+                          Islamic University of Technology, Board Bazar, Gazipur, Dhaka
                         </address>
                       </li>
                       <li className="mb-3 d-flex gap-15 align-items-center">
