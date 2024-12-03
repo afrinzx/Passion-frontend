@@ -21,7 +21,7 @@ const CompareProducts = () => {
                 <div className="product-card-image">
                   <img
                     src="images/watch2.jpg"
-                    className="img-fluid w-100"
+                    className="imgg w-100"
                     alt="watch"
                   />
                 </div>
@@ -71,7 +71,11 @@ const CompareProducts = () => {
                   className="position-absolute cross img-fluid "
                 />
                 <div className="product-card-image">
-                  <img src="images/famous-2.jpg"  className="img-fluid w-100" alt="watch" />
+                  <img
+                    src="images/laptop.jpg"
+                    className="imgg w-100"
+                    alt="laptop"
+                  />
                 </div>
                 <div className="compare-product-details">
                   <h5 className="title mt-3">
@@ -119,7 +123,11 @@ const CompareProducts = () => {
                   className="position-absolute cross img-fluid "
                 />
                 <div className="product-card-image">
-                  <img src="images/speaker.jpg"  className="img-fluid w-100" alt="watch" />
+                  <img
+                    src="images/speaker.jpg"
+                    className="imgg w-100"
+                    alt="watch"
+                  />
                 </div>
                 <div className="compare-product-details">
                   <h5 className="title mt-3">
