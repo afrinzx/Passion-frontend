@@ -3,6 +3,7 @@ import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowLeft } from "react-icons/hi";
+import blog1 from '../images/blog-1.jpg';
 
 const SingleBlog = () => {
   return (
@@ -35,7 +36,7 @@ const SingleBlog = () => {
                 </h3>
                 <div className="card-image ">
                   <img
-                    src="/images/blog-1.jpg"
+                    src={blog1}
                     className="img-fluid w-100 my-4"
                     alt="blog"
                   />
