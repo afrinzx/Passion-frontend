@@ -1,12 +1,12 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from "react-router-dom";
-import prodcompare from '../images/prodcompare.svg';
-import wish from '../images/wish.svg';
-import watch2 from '../images/watch2.jpg';
-import watch1 from '../images/watch1.jpg';
-import addcart from '../images/add-cart.svg';
-import view from '../images/view.svg';
+import prodcompare from "../images/prodcompare.svg";
+import wish from "../images/wish.svg";
+import watch2 from "../images/watch2.jpg";
+import watch1 from "../images/watch1.jpg";
+import addcart from "../images/add-cart.svg";
+import view from "../images/view.svg";
 
 const ProductCard = (props) => {
   const { grid } = props;
@@ -14,25 +14,28 @@ const ProductCard = (props) => {
   return (
     <>
       <div
-        className={`${location.pathname == "/product" ? `gr-${grid}` : "col-3"}`}
+        className={`${
+          location.pathname == "/product" ? `gr-${grid}` : "col-3"
+        }`}
       >
-        <Link to='/product/:id' className="product-card position-relative">
+        <Link
+          to={`${
+            location.pathname == "/"
+              ? "/product/:id"
+              : location.pathname == "/product/:id"
+              ? "/product/:id"
+              : ":id"
+          }`}
+          className="product-card position-relative"
+        >
           <div className="wishlist-icon position-absolute">
             <button className="border-0 bg-transparent">
               <img src={wish} alt="wishlist" />
             </button>
           </div>
           <div className="product-image">
-            <img
-              src={watch1}
-              className="img-fluid"
-              alt="product image"
-            />
-            <img
-              src={watch2}
-              className="img-fluid"
-              alt="product image"
-            />
+            <img src={watch1} className="img-fluid" alt="product image" />
+            <img src={watch2} className="img-fluid" alt="product image" />
           </div>
           <div className="product-details">
             <h6 className="brand">Havels</h6>
@@ -46,7 +49,9 @@ const ProductCard = (props) => {
               edit={false}
               activeColor="#ffd700"
             />
-            <p className={`"description" ${grid===12 ?"d-block":"d-none"}`}>
+            <p
+              className={`"description" ${grid === 12 ? "d-block" : "d-none"}`}
+            >
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
               delectus totam vel magnam harum recusandae dicta, velit quidem
               architecto fugit maxime, beatae molestiae fugiat ut! Id ducimus
