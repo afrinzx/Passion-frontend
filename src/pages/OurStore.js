@@ -230,15 +230,13 @@ const OurStore = () => {
                     Sort By:
                   </p>
                   <select
-                    name="sort_by"
+                    name=""
+                    defaultValue={"manual"}
                     className="form-control form-select"
-                    id="sortBy"
-                    aria-describedby="ally-refresh-page-message"
+                    id=""
                   >
                     <option value="manual">Featured</option>
-                    <option value="best-selling" selected="selected">
-                      Best Selling
-                    </option>
+                    <option value="best-selling">Best Selling</option>
                     <option value="title-ascending">Alphabetically, A-Z</option>
                     <option value="title-descending">
                       Alphabetically, Z-A
